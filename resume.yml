@@ -1,0 +1,136 @@
+# yaml-language-server: $schema=https://yamlresume.dev/schema.json
+---
+content:
+  basics:
+    name: Natchanon Nuntanirund
+    email: nu.natchanon@gmail.com
+    phone: "+66873180987"
+
+  location:
+    city: Bangkok
+    country: Thailand
+
+  profiles:
+    - network: GitHub
+      url: https://github.com/jeeyo
+      username: jeeyo
+    - network: LinkedIn
+      url: https://www.linkedin.com/in/jeeyo/
+      username: jeeyo
+
+  work:
+    - name: Agoda
+      url: https://www.agoda.com
+      position: Senior Software Engineer
+      startDate: Oct 2023
+      endDate:
+      summary: |
+        - Built internal LLM tools to automate various tasks and improve productivity for both engineers and non-engineers
+        - Developed platforms around LLM tooling, including an AI assistants platform and MCP Gateway
+        - Maintained website performance of Agoda Partner Support (YCS)
+        - Maintained shared libraries and micro-frontend components used across multiple microservices
+      keywords:
+        - LLM
+        - MCP
+        - TypeScript
+        - Micro-frontend
+
+    - name: Agoda
+      url: https://www.agoda.com
+      position: Full Stack Software Engineer
+      startDate: Apr 2022
+      endDate: Sep 2023
+      summary: |
+        - Responsible for development of tools to improve developer experience and code quality
+        - Modernized an in-house centralized end-to-end testing framework, improving CI/CD stability and speed
+      keywords:
+        - TypeScript
+        - CI/CD
+        - Developer Experience
+
+    - name: Transtron (Thailand)
+      position: Senior Software Engineer
+      startDate: Apr 2021
+      endDate: Apr 2022
+      summary: |
+        - Developed firmware for road transport fleet monitoring devices
+        - Created a Software-in-the-Loop Simulator for automated testing of embedded fleet monitoring firmware using POSIX C
+        - Created a web-based Log Analyzer for easier analysis of customer device logs
+      keywords:
+        - C
+        - Embedded Firmware
+
+    - name: HiveGround
+      position: Embedded Engineer
+      startDate: Nov 2020
+      endDate: Apr 2021
+      summary: |
+        - Developed firmware for flight control, sensor reading, and actuation for agricultural crop-spraying drones using C++
+        - Implemented automated drone firmware testing on TeamCity CI/CD
+      keywords:
+        - C++
+        - Python
+        - TeamCity
+
+  education:
+    - institution: Chulalongkorn University
+      url: https://www.chula.ac.th
+      degree: Master
+      area: Computer Engineering
+      startDate: Sep 2017
+      endDate: Aug 2020
+      summary: |
+        - Published "A peer-to-peer protocol for prioritized software updates on Wireless Sensor Networks" as Master's Thesis
+        - Prototyped a remote control application for Mitsubishi Electric air conditioners using ECHONET Lite Protocol
+
+  skills:
+    - name: Web Development
+      level: Expert
+      keywords:
+        - TypeScript / JavaScript
+        - C#
+        - Python
+
+    - name: DevOps
+      level: Intermediate
+      keywords:
+        - CI/CD
+        - Docker
+        - Shell
+        - Kubernetes
+
+    - name: Embedded Systems
+      level: Intermediate
+      keywords:
+        - C/C++
+        - RTOS
+        - POSIX
+
+  languages:
+    - language: Thai
+      fluency: Native or Bilingual Proficiency
+    - language: English
+      fluency: Full Professional Proficiency
+
+locale:
+  language: en
+
+layouts:
+  - engine: latex
+    template: moderncv-banking
+    page:
+      margins:
+        top: 1.5cm
+        left: 1.5cm
+        right: 1.5cm
+        bottom: 1.5cm
+      showPageNumbers: false
+    typography:
+      fontSize: 11pt
+
+  - engine: markdown
+
+  - engine: html
+    template: calm
+    typography:
+      fontSize: 16px
