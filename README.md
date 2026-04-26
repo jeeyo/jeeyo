@@ -14,10 +14,11 @@ Professionally, I build LLM-powered tooling. Outside of work, the same instinct 
 
 ## A few things I've built
 
-- **[isere](https://github.com/jeeyo/isere)** — serverless runtime for microcontrollers, powered by Zephyr + QuickJS
-- **[torquemate](https://github.com/jeeyo/torquemate)** — car data logger pulling live OBD data from the Torque Android app to Grafana dashboard
-- **[safely-try](https://github.com/jeeyo/safely-try)** — ergonomic try/catch replacement for TypeScript
-- **[battleship-p2p](https://github.com/jeeyo/battleship-p2p)** — browser P2P Battleship over WebRTC with Cloudflare Workers as signaling
+- **[isere](https://github.com/jeeyo/isere)** - serverless runtime for microcontrollers, powered by Zephyr + QuickJS
+- **[esp32-ac-ir-thermostat](https://github.com/jeeyo/esp32-ir-ac-thermostat)** - ESPHome-compatible thermostat using only IR signals for non-smart air conditioners
+- **[torquemate](https://github.com/jeeyo/torquemate)** - car data logger pulling live OBD data from the Torque Android app to Grafana dashboard
+- **[safely-try](https://github.com/jeeyo/safely-try)** - ergonomic try/catch replacement for TypeScript
+- **[battleship-p2p](https://github.com/jeeyo/battleship-p2p)** - browser P2P Battleship over WebRTC with Cloudflare Workers as signaling
 
 ---
 
