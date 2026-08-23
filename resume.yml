@@ -4,7 +4,11 @@ content:
   basics:
     name: Natchanon Nuntanirund
     email: nu.natchanon@gmail.com
-    phone: "+66873180987"
+    phone: "+66 87 318 0987"
+    summary: |
+      - Staff software engineer building AI/LLM platforms, full-stack web products, developer tooling, and embedded systems
+      - Develops practical AI infrastructure and applications, including configurable agent platforms, MCP gateways, usage analytics, and LLM-powered workflow automation
+      - Works across the stack, from TypeScript, React, Python, and cloud-native services to C/C++, RTOS, and microcontrollers
 
   location:
     city: Bangkok
@@ -20,45 +24,36 @@ content:
 
   work:
     - name: Agoda
-      url: https://www.agoda.com
-      position: Senior Software Engineer
-      startDate: Oct 2023
-      endDate:
+      position: Staff Software Engineer
+      startDate: Aug 2026
       summary: |
-        - Built internal LLM tools to automate various tasks and improve productivity for both engineers and non-engineers
-        - Developed platforms around LLM tooling, including an AI assistants platform and MCP Gateway
-        - Maintained website performance of Agoda Partner Support (YCS)
-        - Maintained shared libraries and micro-frontend components used across multiple microservices
-      keywords:
-        - LLM
-        - MCP
-        - TypeScript
-        - Micro-frontend
+        - Built data pipelines to track employee usage of AI development tools, including Cursor, Claude Code, and Codex, enabling organization-wide visibility into adoption and usage trends
+        - Built internal LLM-powered tools that automated workflows and improved productivity for both engineering and non-engineering teams
+        - Developed an AI agent platform that enables users to define agents with custom prompts, tools, and knowledge, then access them through a web UI or Slack
+        - Developed an MCP gateway that centralizes authentication and usage analytics for internal MCP servers, reducing implementation overhead for server owners
 
     - name: Agoda
-      url: https://www.agoda.com
+      position: Senior Software Engineer
+      startDate: Oct 2023
+      endDate: Aug 2026
+      summary: |
+        - Partnered with product owners and designers to deliver new features for Agoda Partner Support (YCS) while maintaining a responsive, high-performance experience for property partners
+        - Developed and maintained shared libraries and micro-frontend components used across multiple microservices, improving consistency and code reuse
+
+    - name: Agoda
       position: Full Stack Software Engineer
       startDate: Apr 2022
       endDate: Sep 2023
       summary: |
-        - Responsible for development of tools to improve developer experience and code quality
-        - Modernized an in-house centralized end-to-end testing framework, improving CI/CD stability and speed
-      keywords:
-        - TypeScript
-        - CI/CD
-        - Developer Experience
+        - Built internal developer tools that streamlined engineering workflows and improved code quality
+        - Modernized an in-house centralized end-to-end testing framework, improving CI/CD reliability and test execution speed
 
     - name: Transtron (Thailand)
       position: Senior Software Engineer
       startDate: Apr 2021
       endDate: Apr 2022
       summary: |
-        - Developed firmware for road transport fleet monitoring devices
         - Created a Software-in-the-Loop Simulator for automated testing of embedded fleet monitoring firmware using POSIX C
-        - Created a web-based Log Analyzer for easier analysis of customer device logs
-      keywords:
-        - C
-        - Embedded Firmware
 
     - name: HiveGround
       position: Embedded Engineer
@@ -67,50 +62,50 @@ content:
       summary: |
         - Developed firmware for flight control, sensor reading, and actuation for agricultural crop-spraying drones using C++
         - Implemented automated drone firmware testing on TeamCity CI/CD
-      keywords:
-        - C++
-        - Python
-        - TeamCity
 
   education:
     - institution: Chulalongkorn University
-      url: https://www.chula.ac.th
       degree: Master
       area: Computer Engineering
       startDate: Sep 2017
       endDate: Aug 2020
       summary: |
-        - Published "A peer-to-peer protocol for prioritized software updates on Wireless Sensor Networks" as Master's Thesis
-        - Prototyped a remote control application for Mitsubishi Electric air conditioners using ECHONET Lite Protocol
+        - Published "A peer-to-peer protocol for prioritized software updates on Wireless Sensor Networks" as a master's thesis
 
   skills:
-    - name: Web Development
+    - name: AI/LLM Engineering
+      level: Advanced
+      keywords:
+        - Google ADK
+        - OpenAI Agents SDK
+        - MCP
+        - promptfoo
+
+    - name: Web and Backend
       level: Expert
       keywords:
-        - TypeScript / JavaScript
+        - TypeScript
+        - React
+        - Next.js
         - C#
+        - ASP.NET
         - Python
+        - FastAPI
 
-    - name: DevOps
+    - name: Platform and Systems
       level: Intermediate
       keywords:
-        - CI/CD
+        - GitLab CI
+        - GitHub Actions
         - Docker
-        - Shell
-        - Kubernetes
-
-    - name: Embedded Systems
-      level: Intermediate
-      keywords:
         - C/C++
-        - RTOS
         - POSIX
 
   languages:
-    - language: Thai
-      fluency: Native Proficiency
     - language: English
       fluency: Full Professional Proficiency
+    - language: Thai
+      fluency: Native or Bilingual Proficiency
 
 locale:
   language: en
@@ -118,19 +113,42 @@ locale:
 layouts:
   - engine: latex
     template: moderncv-banking
+    sections:
+      aliases:
+        basics: Summary
+        work: Work Experience
+      order:
+        - basics
+        - education
+        - work
+        - skills
+        - languages
     page:
+      paperSize: a4
       margins:
-        top: 1.5cm
-        left: 1.5cm
-        right: 1.5cm
-        bottom: 1.5cm
+        top: 1.2cm
+        left: 1cm
+        right: 1cm
+        bottom: 0.8cm
       showPageNumbers: false
     typography:
-      fontSize: 11pt
+      fontSize: 10pt
+      lineSpacing: normal
+    advanced:
+      showIcons: true
+      showUrls: false
 
   - engine: markdown
+    sections:
+      aliases:
+        basics: Summary
+        work: Work Experience
 
   - engine: html
     template: calm
+    sections:
+      aliases:
+        basics: Summary
+        work: Work Experience
     typography:
       fontSize: 16px
